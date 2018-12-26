@@ -1,0 +1,27 @@
+//
+//  HeaderTableViewCell.swift
+//  PariwasataYogyakarta
+//
+//  Created by Cahyanto Setya Budi on 12/26/18.
+//  Copyright © 2018 Cahyanto Setya Budi. All rights reserved.
+//
+
+import UIKit
+
+class HeaderTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var headerMainLabel: UILabel!
+    @IBOutlet weak var headerDescriptionLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+}
