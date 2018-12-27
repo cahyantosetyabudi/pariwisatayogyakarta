@@ -205,19 +205,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-bu-vOw" customClass="CustomTableView" customModule="PariwasataYogyakarta" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="11" width="335" height="200"/>
+                                                    <rect key="frame" x="20" y="11" width="334.5" height="207"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-so-owe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="334.5" height="207"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jl. Jogja-Solo Km. 16 Prambanan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n3-VA-VWW">
-                                                            <rect key="frame" x="8" y="29" width="319" height="21"/>
+                                                            <rect key="frame" x="8" y="29" width="318.5" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candi Prambanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eI-kk-bl2">
-                                                            <rect key="frame" x="8" y="8" width="319" height="21"/>
+                                                            <rect key="frame" x="8" y="8" width="318.5" height="21"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -225,7 +225,6 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="WLp-bu-vOw" secondAttribute="height" multiplier="67:40" id="3YW-H5-HJ0"/>
                                                         <constraint firstAttribute="trailing" secondItem="5eI-kk-bl2" secondAttribute="trailing" constant="8" id="3cN-dQ-1w1"/>
                                                         <constraint firstItem="5eI-kk-bl2" firstAttribute="leading" secondItem="WLp-bu-vOw" secondAttribute="leading" constant="8" id="47S-5d-mUq"/>
                                                         <constraint firstItem="5eI-kk-bl2" firstAttribute="top" secondItem="WLp-bu-vOw" secondAttribute="top" constant="8" id="A3o-Yv-WKk"/>
@@ -233,6 +232,7 @@
                                                         <constraint firstItem="7n3-VA-VWW" firstAttribute="top" secondItem="5eI-kk-bl2" secondAttribute="bottom" id="Jgw-DH-kHf"/>
                                                         <constraint firstItem="7n3-VA-VWW" firstAttribute="trailing" secondItem="5eI-kk-bl2" secondAttribute="trailing" id="Rlf-yu-WlV"/>
                                                         <constraint firstItem="7n3-VA-VWW" firstAttribute="leading" secondItem="5eI-kk-bl2" secondAttribute="leading" id="V0a-sb-zCC"/>
+                                                        <constraint firstAttribute="width" secondItem="WLp-bu-vOw" secondAttribute="height" multiplier="334:207" id="Yd4-9c-hep"/>
                                                         <constraint firstItem="sUU-so-owe" firstAttribute="leading" secondItem="WLp-bu-vOw" secondAttribute="leading" id="qb6-qm-djM"/>
                                                         <constraint firstAttribute="trailing" secondItem="sUU-so-owe" secondAttribute="trailing" id="ugi-YI-XMx"/>
                                                         <constraint firstAttribute="bottom" secondItem="sUU-so-owe" secondAttribute="bottom" id="wdx-XW-dL1"/>
@@ -251,17 +251,17 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="WLp-bu-vOw" firstAttribute="top" secondItem="X0s-bm-LYp" secondAttribute="top" constant="11" id="5LX-jD-BLr"/>
-                                                <constraint firstAttribute="trailing" secondItem="WLp-bu-vOw" secondAttribute="trailing" constant="20" id="7ar-FA-Uah"/>
-                                                <constraint firstAttribute="bottom" secondItem="WLp-bu-vOw" secondAttribute="bottom" constant="18" id="C1L-DE-0h9"/>
-                                                <constraint firstItem="WLp-bu-vOw" firstAttribute="leading" secondItem="X0s-bm-LYp" secondAttribute="leading" constant="20" id="U6j-vr-cBP"/>
+                                                <constraint firstItem="WLp-bu-vOw" firstAttribute="leading" secondItem="X0s-bm-LYp" secondAttribute="leading" constant="20" id="Buu-2o-SbO"/>
+                                                <constraint firstAttribute="bottom" secondItem="WLp-bu-vOw" secondAttribute="bottom" constant="11" id="IHk-02-he4"/>
+                                                <constraint firstItem="WLp-bu-vOw" firstAttribute="top" secondItem="X0s-bm-LYp" secondAttribute="top" constant="11" id="QLX-cR-4wp"/>
+                                                <constraint firstAttribute="trailing" secondItem="WLp-bu-vOw" secondAttribute="trailing" constant="20" id="vL7-MW-qW9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressPlaceLabel" destination="7n3-VA-VWW" id="29R-qo-2aE"/>
                                             <outlet property="namePlaceLabel" destination="5eI-kk-bl2" id="Hfq-sn-Ppn"/>
                                             <outlet property="placeImageView" destination="sUU-so-owe" id="8xD-kM-eQr"/>
-                                            <segue destination="rVP-30-OWN" kind="show" id="gAT-ES-Cx2"/>
+                                            <segue destination="rVP-30-OWN" kind="show" identifier="detailPlace" id="gAT-ES-Cx2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -289,20 +289,104 @@
             </objects>
             <point key="canvasLocation" x="1040.8" y="1914.6926536731635"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Place View Controller-->
         <scene sceneID="C2e-Ks-Bma">
             <objects>
-                <viewController id="rVP-30-OWN" sceneMemberID="viewController">
+                <viewController id="rVP-30-OWN" customClass="DetailPlaceViewController" customModule="PariwasataYogyakarta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhA-ny-toi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwu-nh-Tj4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pUF-kY-dRp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pUF-kY-dRp" secondAttribute="height" multiplier="4:3" id="hdq-kP-qL7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candi Prambanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtM-Ci-Yub">
+                                        <rect key="frame" x="16" y="290.5" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-LE-doP">
+                                        <rect key="frame" x="16" y="401.5" width="343" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jalan Keraton" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-yk-J7l">
+                                        <rect key="frame" x="40" y="319.5" width="319" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="1M8-UR-iHo">
+                                        <rect key="frame" x="16" y="319.5" width="16" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="SoE-kT-cbh"/>
+                                            <constraint firstAttribute="width" secondItem="1M8-UR-iHo" secondAttribute="height" multiplier="5:8" id="TgH-wF-iEh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ringkasan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-G5-AqG">
+                                        <rect key="frame" x="154.5" y="368.5" width="66.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-oH-WnH" customClass="GMSMapView">
+                                        <rect key="frame" x="16" y="609" width="343" height="285"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ctm-yk-J7l" firstAttribute="trailing" secondItem="wtM-Ci-Yub" secondAttribute="trailing" id="0cC-Vw-TYZ"/>
+                                    <constraint firstItem="wtM-Ci-Yub" firstAttribute="top" secondItem="pUF-kY-dRp" secondAttribute="bottom" constant="9.5" id="0dv-h9-PO4"/>
+                                    <constraint firstItem="Ctm-yk-J7l" firstAttribute="top" secondItem="1M8-UR-iHo" secondAttribute="top" id="0kT-H0-mbN"/>
+                                    <constraint firstItem="wtM-Ci-Yub" firstAttribute="leading" secondItem="hwu-nh-Tj4" secondAttribute="leading" constant="16" id="1Pg-ui-noe"/>
+                                    <constraint firstItem="Ctm-yk-J7l" firstAttribute="leading" secondItem="1M8-UR-iHo" secondAttribute="trailing" constant="8" id="2hx-sJ-zMi"/>
+                                    <constraint firstAttribute="bottom" secondItem="XoV-LE-doP" secondAttribute="bottom" constant="16" id="5KD-48-lKL"/>
+                                    <constraint firstItem="aRO-G5-AqG" firstAttribute="centerX" secondItem="hwu-nh-Tj4" secondAttribute="centerX" id="Eug-Ki-Cfq"/>
+                                    <constraint firstItem="XoV-LE-doP" firstAttribute="trailing" secondItem="Ctm-yk-J7l" secondAttribute="trailing" id="H8f-p2-33z"/>
+                                    <constraint firstAttribute="trailing" secondItem="pUF-kY-dRp" secondAttribute="trailing" id="OiH-sq-0fR"/>
+                                    <constraint firstItem="XoV-LE-doP" firstAttribute="leading" secondItem="wtM-Ci-Yub" secondAttribute="leading" id="PDO-JI-YZY"/>
+                                    <constraint firstItem="pUF-kY-dRp" firstAttribute="width" secondItem="hwu-nh-Tj4" secondAttribute="width" id="PcD-iO-WJS"/>
+                                    <constraint firstItem="1M8-UR-iHo" firstAttribute="top" secondItem="wtM-Ci-Yub" secondAttribute="bottom" constant="8" id="Xb7-vc-ife"/>
+                                    <constraint firstItem="aRO-G5-AqG" firstAttribute="top" secondItem="Ctm-yk-J7l" secondAttribute="bottom" constant="32" id="lKD-OB-PMq"/>
+                                    <constraint firstItem="pUF-kY-dRp" firstAttribute="top" secondItem="hwu-nh-Tj4" secondAttribute="top" id="mWE-NZ-nZc"/>
+                                    <constraint firstItem="1M8-UR-iHo" firstAttribute="leading" secondItem="wtM-Ci-Yub" secondAttribute="leading" id="p1w-Y1-HdQ"/>
+                                    <constraint firstItem="pUF-kY-dRp" firstAttribute="leading" secondItem="hwu-nh-Tj4" secondAttribute="leading" id="pz7-wi-5Ds"/>
+                                    <constraint firstAttribute="trailing" secondItem="wtM-Ci-Yub" secondAttribute="trailing" constant="16" id="rQs-aZ-cwh"/>
+                                    <constraint firstItem="XoV-LE-doP" firstAttribute="top" secondItem="aRO-G5-AqG" secondAttribute="bottom" constant="16" id="sf6-us-i2s"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hwu-nh-Tj4" firstAttribute="leading" secondItem="MQE-KM-0eG" secondAttribute="leading" id="6DG-6N-5Wu"/>
+                            <constraint firstItem="MQE-KM-0eG" firstAttribute="trailing" secondItem="hwu-nh-Tj4" secondAttribute="trailing" id="ben-YM-WYH"/>
+                            <constraint firstItem="hwu-nh-Tj4" firstAttribute="top" secondItem="MQE-KM-0eG" secondAttribute="top" id="cJK-SY-Sc1"/>
+                            <constraint firstItem="MQE-KM-0eG" firstAttribute="bottom" secondItem="hwu-nh-Tj4" secondAttribute="bottom" id="gxT-P2-ETQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MQE-KM-0eG"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="mainPlaceImageView" destination="pUF-kY-dRp" id="zkS-9L-4Lc"/>
+                        <outlet property="mapView" destination="VtJ-oH-WnH" id="u5o-F7-sOp"/>
+                        <outlet property="namePlaceLabel" destination="wtM-Ci-Yub" id="xxX-TQ-tq2"/>
+                        <outlet property="pinAddressImage" destination="1M8-UR-iHo" id="DdQ-hS-an4"/>
+                        <outlet property="placeAddressLabel" destination="Ctm-yk-J7l" id="E2z-8w-8ZU"/>
+                        <outlet property="placeDescriptionTextiew" destination="XoV-LE-doP" id="S4c-9Y-snK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qu1-ke-ZOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="2743"/>
+            <point key="canvasLocation" x="-2.3999999999999999" y="2741.8290854572715"/>
         </scene>
         <!--Login-->
         <scene sceneID="3ry-Sw-vo6">
@@ -411,6 +495,7 @@
     <resources>
         <image name="icon" width="1200" height="1201"/>
         <image name="lock" width="128" height="128"/>
+        <image name="pin" width="320" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NQF-f8-Eiv"/>

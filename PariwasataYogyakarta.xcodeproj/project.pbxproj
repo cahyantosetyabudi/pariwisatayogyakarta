@@ -20,6 +20,7 @@
 		79A8B1A921D34A05008352F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8B1A721D34A05008352F7 /* Main.storyboard */; };
 		79A8B1AB21D34A05008352F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A8B1AA21D34A05008352F7 /* Assets.xcassets */; };
 		79A8B1AE21D34A05008352F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A8B1AC21D34A05008352F7 /* LaunchScreen.storyboard */; };
+		79AB50BC21D495970065034D /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AB50BB21D495970065034D /* DetailPlaceViewController.swift */; };
 		79E3432621D3B43000D1F22E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E3432521D3B43000D1F22E /* HomeViewController.swift */; };
 		79E3432821D3B90D00D1F22E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E3432721D3B90D00D1F22E /* HomeTableViewCell.swift */; };
 		79E3432A21D3BA1300D1F22E /* TourismPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E3432921D3BA1300D1F22E /* TourismPlace.swift */; };
@@ -43,6 +44,7 @@
 		79A8B1AA21D34A05008352F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79A8B1AD21D34A05008352F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79A8B1AF21D34A05008352F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AB50BB21D495970065034D /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
 		79E3432521D3B43000D1F22E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		79E3432721D3B90D00D1F22E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		79E3432921D3BA1300D1F22E /* TourismPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismPlace.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		7986161C21D3F3E00071D84E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79AB50BA21D495720065034D /* DetailPlace */,
 				7986162021D3F40B0071D84E /* Home */,
 				7986161F21D3F4040071D84E /* Register */,
 				7986161E21D3F3FF0071D84E /* Login */,
@@ -202,6 +205,14 @@
 				7986161521D3E7F80071D84E /* Designables */,
 			);
 			path = PariwasataYogyakarta;
+			sourceTree = "<group>";
+		};
+		79AB50BA21D495720065034D /* DetailPlace */ = {
+			isa = PBXGroup;
+			children = (
+				79AB50BB21D495970065034D /* DetailPlaceViewController.swift */,
+			);
+			path = DetailPlace;
 			sourceTree = "<group>";
 		};
 		E48AAD4850DFF9E04598518E /* Frameworks */ = {
@@ -333,9 +344,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PariwasataYogyakarta/Pods-PariwasataYogyakarta-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +372,7 @@
 				7986162421D3F6DE0071D84E /* TourismPlaceListViewModel.swift in Sources */,
 				79E3432621D3B43000D1F22E /* HomeViewController.swift in Sources */,
 				79E3432A21D3BA1300D1F22E /* TourismPlace.swift in Sources */,
+				79AB50BC21D495970065034D /* DetailPlaceViewController.swift in Sources */,
 				793C432721D34D6200989873 /* LoginViewController.swift in Sources */,
 				793C432521D34CCA00989873 /* LandingViewController.swift in Sources */,
 				79A8B1A421D34A05008352F7 /* AppDelegate.swift in Sources */,

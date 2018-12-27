@@ -44,6 +44,10 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -57,10 +61,11 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
-        cell.selectionStyle = .none
+        let address = tourismPlaceListViewModel.tourismPlaceList[indexPath.row].alamatPariwisata.components(separatedBy: ",")
         
+        cell.selectionStyle = .none
         cell.namePlaceLabel.text = tourismPlaceListViewModel.tourismPlaceList[indexPath.row].namaPariwisata
-        cell.addressPlaceLabel.text = tourismPlaceListViewModel.tourismPlaceList[indexPath.row].alamatPariwisata
+        cell.addressPlaceLabel.text = address[0]
         self.downloadImage(tourismPlaceListViewModel.tourismPlaceList[indexPath.row].gambarPariwisata, cell)
         
         return cell
@@ -75,5 +80,15 @@ extension HomeViewController: UITableViewDataSource {
             
         }
         task.resume()
+    }
+}
+
+extension HomeViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailPlace" {
+            let destinationViewController = segue.destination as! DetailPlaceViewController
+            let indexPath = homeTableView.indexPathForSelectedRow
+            destinationViewController.tourismPlace = self.tourismPlaceListViewModel.tourismPlaceList[indexPath!.row]
+        }
     }
 }

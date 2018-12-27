@@ -25,6 +25,13 @@ PODS:
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.9):
     - FirebaseCore (~> 4.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/Defines (2.1.3)
@@ -47,6 +54,8 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - GoogleMaps
+  - GooglePlaces
 
 SPEC CHECKSUMS:
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
@@ -55,11 +64,13 @@ SPEC CHECKSUMS:
   FirebaseCore: 872307b001bbefda1dfa0dbfffa50a6919023d4a
   FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 4e0691103b0524c77a955f267d87329f84da5113
+PODFILE CHECKSUM: 248a866183a513a52151b6c853aa92a97bf197a1
 
 COCOAPODS: 1.3.1
