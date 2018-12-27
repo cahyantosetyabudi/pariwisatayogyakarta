@@ -40,6 +40,8 @@ class DetailPlaceViewController: UIViewController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = map
+        
+        getAddress(address: tourismPlace.namaPariwisata)
     }
     
     func downloadImage(_ url: String) {
@@ -49,6 +51,24 @@ class DetailPlaceViewController: UIViewController {
                 self.mainPlaceImageView.image = UIImage(data: data)
             }
             
+        }
+        task.resume()
+    }
+    
+    func getAddress(address: String) {
+        var components = URLComponents(string: "https://maps.googleapis.com/maps/api/geocode/json")
+        let key = URLQueryItem(name: "key", value: "AIzaSyDIOITHncQ65xZTjBBqZATtaOKXGA4rDtE")
+        let address = URLQueryItem(name: "address", value: address)
+        components!.queryItems = [key, address]
+        
+        let session = URLSession.shared
+        session.configuration.timeoutIntervalForRequest = 30.0
+        session.configuration.timeoutIntervalForResource = 60.0
+        let task = session.dataTask(with: components!.url!) { (data, responses, error) in
+            guard let data = data else { return }
+            let anu = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
+            print(anu)
+            print("lol")
         }
         task.resume()
     }
